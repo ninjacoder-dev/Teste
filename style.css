@@ -1,0 +1,70 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(azulist.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+strong
+{
+    color: #000;
+}
+
+#don
+{
+    position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em #000004;
+}
+
+#don::before
+{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 50px;
+    left:100px;
+    background: linear-gradient(135deg, #212121 0%, #212121 50%, #4d4a4b 50%, #4d4a4b);
+    border-radius: 0 0 0,5em 0;
+    box-shadow: 02em 02em 02em #000004;
+    transition: 0.3s;
+    inset: 0;
+    /*box-shadow: 0 1px hsl(0 0% 100%/0.15);
+    background: hsl(0 0% 10%);*/
+}
+
+#don:hover::before
+{
+    width: 1.6em;
+    height: 1.6em;
+}
+
+#don:active
+{
+    box-shadow: 0,2em 0,2em 0,3em #000004;
+    transform: translate(0,1em, 0,1em);
+}
+
+/*#don::after
+{
+    content: "";
+    position: absolute;
+    inset: -4px;
+    filter: blur(20px);
+    background: radial-gradient(50% 50% at center, hsl(var(--hue)80% 85%), hsl(var(--hue)80% 70%), transparent);
+}*/
+
